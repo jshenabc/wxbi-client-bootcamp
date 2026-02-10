@@ -145,9 +145,13 @@ In this section you'll export the Cognos metrics definition and converse with it
 
     ![screenshot](./attachments/21.png) <br><br>
 
-2. In the **Semantic model** page, select **Employee and Product Data** (A), click on the 3-dot ellipsis (B), and choose **Export metrics definition** (C) (since this is an FM package and metrics are already generated). <br><br>
+2. In the **Semantic model** page, select **Employee-Course Data** (A), click on the 3-dot ellipsis (B), and choose **Export metrics definition** (C) (since this is an FM package and metrics are already generated). <br><br>
 
     ![screenshot](./attachments/22.png) <br><br>
+
+    If you can't find **Employee-Course Data**, search "gross" keyword (A), you might be able to find multiple results (B) choose one of **metrics** (C), click on the 3-dot ellipsis, and choose **Export metrics definition**. <br><br>
+
+    ![screenshot](./attachments/40.png) <br><br>
 
 3. Now, Go back to your project. You’ll see two new assets created (A): **Metric** and **Metadata Enrichment**. Click on the Export Metrics Job (B) to check for its status.<br><br>
 
