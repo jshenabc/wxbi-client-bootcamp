@@ -79,14 +79,14 @@ For each of the questions asked, the agent goes through four steps to generate a
 
 1. Select the **Go Sales** dataset from the menu
 2. Ask the following question followed by the **Enter** key: `which region leads in sales?`
-3. Next try this question: `which brand contributed the most to total sales in that region last year?`
+3. Next try this question: `which brand contributed the most to total sales in that region in 2024?`
 Please note that in this example the question is rephrased to include the term "America", which was inferred from the previous question to keep the intent in context.
 
 ![screenshot](./attachments/32.png)
 
 <br /> 
 
-Now, let's try a different question: `show me total revenue by year`
+Now, let's try a different question: `show me total revenue by year in visualization`
 
 ![screenshot](./attachments/34.png)
 
