@@ -56,7 +56,7 @@ For each of the questions asked, the agent goes through four steps to generate a
 
 **Note :** Click the "Show AI Steps" / "Hide AI Steps" button to show or hide the details.
 
-- **Step 1: Interpreted question** - In this step, the question is interpreted or rephrased. Please note that in this example the question is rephrased to include the term "America", which was inferred from the previous question to keep the intent in context.
+- **Step 1: Interpreted question** - In this step, the question is interpreted or rephrased. 
 
 - **Step 2: Found data** - This step shows the data source or the data asset that is used to answer the question. In the sample screenshot, the data asset used was “Sales Metrics”.  Click the "Preview Asset in a new tab" link to view the sample data and the data asset details.
 
@@ -80,6 +80,7 @@ For each of the questions asked, the agent goes through four steps to generate a
 1. Select the **Go Sales** dataset from the menu
 2. Ask the following question followed by the **Enter** key: `which region leads in sales?`
 3. Next try this question: `which brand contributed the most to total sales in that region last year?`
+Please note that in this example the question is rephrased to include the term "America", which was inferred from the previous question to keep the intent in context.
 
 ![screenshot](./attachments/32.png)
 
@@ -90,7 +91,7 @@ Now, let's try a different question: `show me total revenue by year`
 ![screenshot](./attachments/34.png)
 
 <br /> 
-Unlike before, it answered with a visualization as opposed to text. That's because watsonx BI can answer with both text and visualizations or a combination of both, depending on what the model thinks is the best representation of your data. In this case, you're asking a question about revenue over time, so the best way to represent that is through a line chart - and that's what you see here along.  <br><br>
+Unlike before, it answered with a visualization. That's because watsonx BI can answer with both text and visualizations or a combination of both, depending on what the model thinks is the best representation of your data. In this case, you're asking a question about revenue over time, so the best way to represent that is through a line chart - and that's what you see here along.  <br><br>
 
 Use the `pin` button to **pin this chart** to your key metrics.  There are also buttons to `zoom in/out` and `change chart type` if you prefer a different type of visualization.
 
@@ -109,15 +110,11 @@ A response is generated that explains factors that contributed to revenue droppi
 
 ![screenshot](./attachments/36.png)
 
-Specifically, it mentions that revenue for goods that were black in color fell by 29%.  We need to better understand what types of goods.
+Specifically, it mentions that revenue for goods that were black in color fell by 29%.  We need to better understand it.
 
-Ask, `which types of black color product types fell the most in 2024?`
+You can continue digging to get more insights, based on this new information. 
 
-![screenshot](./attachments/36.1.png)
-
-Now we see that Eyewear had the largest revenue drop.  You can continue digging to get more insights, based on this new information. 
-
-Ask, `show me eyewear's performance by sales channel`
+Ask, `show me Product Color Black's performance by sales channel`
 
 In the resulting answer, you can see the agent interpreted _sales channel_ to be the _order_method_ column in order to retrieve the necessary data.
 
@@ -125,7 +122,7 @@ In the resulting answer, you can see the agent interpreted _sales channel_ to be
 
 Now, there may be cases where the answer provided does not use the data you were hoping for, such as, in with ambiguous questions.  watsonx BI handles disambiguation by allowing the user to make changes to the AI Steps.
 
-Ask, `what are the top performing products for eyewear?`
+Ask, `What are the top performing products for Product Color Black?`
 
 Once the results are generated, **click** Show AI steps.
 
